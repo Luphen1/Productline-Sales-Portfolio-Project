@@ -22,8 +22,7 @@
 -  [Recommendations](#Recommendations)
 
 ### Project Overview
-
-
+I explored a product sales dataset to generate various analytics and insights, identifying trends and patterns. I progressed from basic SQL queries to addressing complex problems using subqueries, CTEs, aggregate functions, and window functions.
 
 ### Data Source
 
