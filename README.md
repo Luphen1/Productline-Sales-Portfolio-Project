@@ -17,8 +17,6 @@
 
 -  [Results/Findings](#Results/Findings)
 
--  [Limitations](#Limitations)
-
 -  [Recommendations](#Recommendations)
 
 ### Project Overview
@@ -386,19 +384,24 @@ SELECT PRODUCTLINE,
 
 --- Who were the top 10 customers with highest percentage of sales?
 -- Euro Shopping Channel had the highest percentage_revenue of 40.95% and other of 106
-WITH top_ten_customers AS
-(
-SELECT TOP 10 CUSTOMERNAME,PRODUCTLINE,
-       ROUND(SUM(SALES) / 100 * 0.01,2) AS revenue_percentage,
-	   COUNT(QUANTITYORDERED) AS number_of_order ,
-	   MIN(ORDERDATE) AS first_date,
-	   MAX(ORDERDATE) AS last_order
-	   FROM [Femi].[dbo].[sales_data]
-	   GROUP BY CUSTOMERNAME,PRODUCTLINE
-	   ORDER BY  revenue_percentage DESC,number_of_order DESC
-	   )
-	   SELECT *
-	   FROM top_ten_customers
+
+WITH total_sales AS (
+    SELECT SUM(SALES) AS total_revenue
+    FROM [Femi].[dbo].[sales_data]
+),
+top_ten_customers AS (
+    SELECT TOP 10 CUSTOMERNAME, PRODUCTLINE,
+           ROUND(SUM(SALES) / (SELECT total_revenue FROM total_sales) * 100, 2) AS revenue_percentage,
+           COUNT(QUANTITYORDERED) AS number_of_order,
+           MIN(ORDERDATE) AS first_date,
+           MAX(ORDERDATE) AS last_order
+    FROM [Femi].[dbo].[sales_data]
+    GROUP BY CUSTOMERNAME, PRODUCTLINE
+    ORDER BY revenue_percentage DESC, number_of_order DESC
+)
+SELECT *
+FROM top_ten_customers;
+
 
 ```
 
@@ -434,7 +437,6 @@ SELECT  *,
 
 
 
-### Limitations
 
 
 
