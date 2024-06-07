@@ -36,6 +36,15 @@ Microsoft SQL server management studio was utilized for importing dataset and fo
 
 ### Data Cleaning/Preparation
 
+In the initial data preparation, I performed the following tasks below:
+
+1. Data loading and inspection.
+2. Handling for missing values.
+3. Checking for duplicate values.
+4. Handling Inconsistent data and typos.
+5. There were null data in columns like ADDRESSLINE2, STATE, AND POSTALCODE in which I left untouched for data quality.
+
+
 
 
 ### Exploration Data Analysis
