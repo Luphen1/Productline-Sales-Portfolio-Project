@@ -157,7 +157,7 @@ ORDER BY 3 DESC
 
 ```
 
---- What is the Year-over-Year growth for Each Product Line?
+--- What was the Year-over-Year growth for Each Product Line?
 SELECT 
     p1.PRODUCTLINE,
     p1.YEAR_ID,
@@ -220,7 +220,7 @@ count_of_orders DESC, avg_days_between_orders DESC
 
 ```
 
--- What is the distribution of deal sizes (Small, Medium, Large)?
+-- What was the distribution of deal sizes (Small, Medium, Large)?
 -- Medium Sizes generated $6,087,432.24 with an order of 1384
 -- Small Sizes generated $2,643,077.35 with an order of 1282
 -- Large Sizes generated $1,302,119.26 with an order of 157
@@ -274,7 +274,7 @@ SELECT  COUNTRY,STATE,CITY,
 
 ```
 
--- How do sales vary by territory?
+-- How does sales vary by territory?
 
 -- EMEA(Europe Middle East Africa) generated $4,979,272.41 EMEA and order of 1407.
 -- APAC(Asia Pacific) generated $746,121.83 EMEA and order of 1407.
@@ -296,7 +296,7 @@ SELECT  CASE
 
   ```
 
--- What are the sales trends by quarter?
+-- What were the sales trends by quarter?
 
 -- 1st quarter generated $2,350,817.73 with an order of 665
 -- 2nd quarter generated $2,048,120.30 with an order of 561
@@ -355,7 +355,7 @@ SELECT PRODUCTLINE,
 
 ```
 
---- Who are the top 10 customers with highest percentage of sales?
+--- Who were the top 10 customers with highest percentage of sales?
 -- Euro Shopping Channel had the highest percentage_revenue of 40.95% and other of 106
 WITH top_ten_customers AS
 (
