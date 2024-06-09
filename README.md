@@ -51,17 +51,16 @@ EDA involved exploring product line sales dataset to answer key questions such a
 1.	What was the total number of orders across the dataset?
 2.	What was the best month for sales in a specific year? How much was earned that month?
 3.	November seems to be the month, what product do they sell in November?
-4.	What was the Year-over-Year growth for Each Product Line?
-5.	How frequently does customers place orders?
-6.	What was the distribution of deal sizes (Small, Medium, Large)?
-7.	Which geographic regions generate the most sales?
-8.	How does sales vary by territories?
-9.	What were the sales trends by quarter?
-10.	How does the order status (Shipped, Cancelled, On Hold) sales trends?
-11.	Which products generate the most revenue?
-12.	Who were the top ten customers in terms of percentage of sales?
-13.	What was the change in product lines sales over time?
-14.	Find customers with repeating others.
+4.	How frequently does customers place orders?
+5.	What was the distribution of deal sizes (Small, Medium, Large)?
+6.	Which geographic regions generate the most sales?
+7.	How does sales vary by territories?
+8.	What were the sales trends by quarter?
+9.	How does the order status (Shipped, Cancelled, On Hold) sales trends?
+10.	Which products generate the most revenue?
+11.	Who were the top ten customers in terms of percentage of sales?
+12.	What was the change in product lines sales over time?
+	
 
 
 
