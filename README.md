@@ -20,8 +20,9 @@
 -  [Recommendations](#Recommendations)
 
 ### Project Overview
-The provided dataset is a product line sale, containing 2823 records with 25 columns. The data encompasses various aspects of sales transactions, including ORDERNUMBER, QUANTITYNUMBER, PRICEEACH, ORDERLINENUMBER, SALES, ORDERDATE, STATUS, QTR_ID, MONTH_ID, YEAR_ID, PRODUCTLINE, MSRP, PRODUCTCODE, CUSTOMERNAME, PHONE, ADDRESSLINE1, ADDRESSLINE2, CITY, STATE, POSTALCODE, COUNTRY, TERRITORY, CONTACTLASTNAME, CONTACTFIRSTNAME, AND DEALSIZE.
-I explored a product sales dataset to generate various analytics and insights, identifying trends and patterns. I progressed from basic SQL queries to addressing complex problems using subqueries, CTEs, aggregate functions, and window functions.
+The provided dataset is a product line sales dataset containing 2,823 records with 25 columns. The data encompasses various aspects of sales transactions, including ORDERNUMBER, QUANTITYORDERED, PRICEEACH, ORDERLINENUMBER, SALES, ORDERDATE, STATUS, QTR_ID, MONTH_ID, YEAR_ID, PRODUCTLINE, MSRP, PRODUCTCODE, CUSTOMERNAME, PHONE, ADDRESSLINE1, ADDRESSLINE2, CITY, STATE, POSTALCODE, COUNTRY, TERRITORY, CONTACTLASTNAME, CONTACTFIRSTNAME, and DEALSIZE.
+
+I explored this product sales dataset to generate various analytics and insights, identifying trends and patterns. I progressed from basic SQL queries to addressing complex problems using  CTEs, aggregate functions, and window functions.
 
 ### Data Source
 
@@ -29,18 +30,18 @@ I explored a product sales dataset to generate various analytics and insights, i
 
 ### Tools
 
-Microsoft SQL server management studio was utilized for importing dataset and for checking duplicates records. I also utilized SQL server to Identified and handled null values across the dataset.
+Microsoft SQL Server Management Studio was utilized for importing the dataset and checking for duplicate records. I also utilized SQL Server to identify and handle null values across the dataset.
 
 
 ### Data Cleaning/Preparation
 
-In the initial data preparation, I performed the following tasks below:
+In the initial data preparation, I performed the following tasks:
 
 1. Data loading and inspection.
-2. Handling for missing values.
+2. Handling missing values.
 3. Checking for duplicate values.
-4. Handling Inconsistent data and typos.
-5. There were null data in columns like ADDRESSLINE2, STATE, AND POSTALCODE in which I left untouched for data quality.
+4. Handling inconsistent data and typos.
+5. There were null values in columns like ADDRESSLINE2, STATE, and POSTALCODE, which I left untouched to enhanced data quality.
 
 
 
@@ -58,7 +59,7 @@ EDA involved exploring product line sales dataset to answer key questions such a
 8.	What were the sales trends by quarter?
 9.	How does the order status (Shipped, Cancelled, On Hold) sales trends?
 10.	Which products generate the most revenue?
-11.	Who were the top ten customers in terms of percentage of sales?
+11.	Who were the top ten customers in terms of sales?
 12.	What was the change in product lines sales over time?
 	
 
@@ -387,8 +388,8 @@ FROM top_ten_customers;
 8.	Shipped orders generated revenue of $9,291,501.08 with 2,617 orders. Disputed orders generated revenue of $72,212.86 with 14 orders. Cancelled orders generated revenue of $194,487.48 with 60 orders. On hold orders generated revenue of $178,979.19 with 44 orders. Resolved orders generated revenue of $150,718.28 with 47 orders. In-process orders generated revenue of $144,729.96 with 41 orders.
 9.	Classic Cars generated the highest revenue of $3,919,615.66 with 967 orders and an average price of $87.34. Vintage Cars generated revenue of $1,903,150.84 with 607 orders and an average price of $78.15. Motorcycles generated revenue of $1,166,388.34 with 331 orders and an average price of $83.00. Planes generated revenue of $975,003.57 with 306 orders and an average price of $81.74. Trucks and Buses generated revenue of $1,127,789.84 with 301 orders and an average price of $87.53. Ships generated revenue of $714,437.13 with 234 orders and an average price of $83.86. Trains generated revenue of $226,243.47 with 77 orders and an average price of $75.65.
 10.	Salzburg Collectables generated revenue of $149,798.63 with 40 orders. Rovelli Gifts generated revenue of $137,955.72 with 48 orders. Online Diecast Creations Co. generated revenue of $131,685.30 with 34 orders. Corrida Auto Replicas, Limited generated revenue of $120,615.28 with 32 orders. Motor Mint Distributors Inc. generated revenue of $83,682.16 with 23 orders. Tekni Collectables Inc. generated revenue of $83,228.19 with 21 orders. Daedalus Designs Imports generated revenue of $69,052.41 with 20 orders. Iberia Gift Imports, Corp. generated revenue of $54,723.62 with 15 orders. Double Decker Gift Stores, Ltd. generated revenue of $36,019.04 with 12 orders. Atelier graphique generated revenue of $24,179.96 with 7 orders.
-11.    Customers with top others are Euro Shopping Channel, Mini Gifts Distributors Ltd., Muscle Machine Inc etc.	
-
+11.    Customers with top others are Euro Shopping Channel, Mini Gifts Distributors Ltd., Muscle Machine Inc etc.
+12.    Medium Sizes generated a revenue $6,087,432.24 with 1,384 orders. Small Sizes generated $2,643,077.35 with 1,282 orders. Large Sizes generated $1,302,119.26 with 157 orders.
 
 
 
@@ -429,5 +430,8 @@ Given the significant revenues from key customers, invest in enhancing the onlin
 10.**Sustainability and Ethical Practices:**
 With increasing consumer awareness about sustainability, consider adopting eco-friendly practices in production and packaging. Highlight these efforts in marketing campaigns to attract environmentally conscious customers.
 By implementing these strategic recommendations, the business can leverage the strengths identified in the data analysis, address areas of improvement, and drive sustainable growth in the product line business.
+
+11.**Customer Feedback and Engagement Strategy:**
+Actively seek customer feedback on all size categories to identify areas for improvement. Engage with customers through surveys, reviews, and social media to build a loyal customer base. Use this feedback to refine product offerings and enhance customer satisfaction.  Ensure that Medium and Small Sizes are adequately stocked to avoid stockouts and lost sales opportunities. For Large Sizes, maintain a lean inventory to reduce holding costs while being responsive to demand spikes.
 
 
