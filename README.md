@@ -25,7 +25,7 @@ The provided dataset is a product line sales dataset containing 2,823 records wi
 I explored this product sales dataset to generate various analytics and insights, identifying trends and patterns. I progressed from basic SQL queries to addressing complex problems using  CTEs, aggregate functions, and window functions.
 
 ### Data Source
-
+[https://github.com/AllThingsDataWithAngelina/DataSource/blob/main/sales_data_sample.csv](https://github.com/AllThingsDataWithAngelina/DataSource/blob/main/sales_data_sample.csv)
 
 
 ### Tools
